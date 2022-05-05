@@ -53,6 +53,12 @@ flow project deploy
 
 📱 Open http://localhost:3000 to see the app
 
+# 💻 Using the DApp
+
+1. After opening http://localhost:3000, click the "Log In" button select the first account (with address `0xf8d6e0586b0a20c7`). 
+2. Click "Get Greeting". You'll see a greeting appear. Note that this is the greeting defined in `HelloWorld.cdc` 
+3. You can change the greeting by typing into the little input and clicking "Change Greeting". This will run a transaction to change the greeting in the contract.
+
 # 📚 Documentation
 
 Documentation, tutorials, challenges, and many more resources, visit: [academy.ecdao.org](https://academy.ecdao.org)
