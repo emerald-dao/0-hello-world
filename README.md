@@ -1,4 +1,4 @@
-# 🏗 Scaffold-ETH
+# 🍀 0-Hello-World
 
 > a basic starter dapp on Flow! 🚀
 
