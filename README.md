@@ -1,26 +1,31 @@
-# 🍀 0-Hello-World
+# 💎 Emerald Academy
 
-> a basic starter dapp on Flow! 🚀
+## 🚩 Challenge 0: 🍀 Hello World Example 🤓
 
-🧪 Quickly experiment with Flow using a frontend that adapts to your smart contract:
+🎫 Deploy a simple HelloWorld contract to learn the basics of the Flow blockchain and Cadence. You'll use:
+- The local Flow emulator to deploy smart contracts. 
+- The local Flow dev wallet to log into test accounts.
+- A template Next.js app with sample scripts and transactions to interact with your contract.
 
-🚨 TODO: CHANGE IMAGE 🚨
-![image](https://user-images.githubusercontent.com/2653167/124158108-c14ca380-da56-11eb-967e-69cde37ca8eb.png)
+🌟 The final deliverable is an app that lets users read and change a greeting field on Flow testnet.
 
+💬 Meet other builders working on this challenge and get help in the [Emerald City Discord](https://discord.gg/emeraldcity)!
 
-# 🏄‍♂️ Quick Start
+---
 
-Prerequisites: [Node (v16 LTS)](https://nodejs.org/en/download/) and [Git](https://git-scm.com/downloads)
+# Checkpoint 0: 📦 Install 📚
 
-> clone/fork 🏗 0-hello-world:
+Required: 
+* [Git](https://git-scm.com/downloads)
+* [Node](https://nodejs.org/dist/latest-v16.x/)  (🧨 Use Node v16 or a previous version as v17 may cause errors 🧨)
 
-```bash
+```sh
 git clone https://github.com/emerald-dao/0-hello-world.git
 ```
 
-> install and start your 📱 frontend:
+> in a terminal window, start your 📱 frontend:
 
-```bash
+```sh
 cd 0-hello-world
 npm install
 npm run dev
@@ -40,92 +45,114 @@ cd 0-hello-world
 flow dev-wallet
 ```
 
-> in a fourth terminal window, 📔 deploy your contract:
+> in a fourth terminal window, 💾 deploy your contract:
 
 ```bash
 cd 0-hello-world
 flow project deploy
 ```
 
-🔏 Edit your smart contract `HelloWorld.cdc` in `flow/cadence/HelloWorld.cdc`
-
-📝 Edit your frontend `index.js` in `pages/index.js`
+> You can `flow project deploy --update` to deploy a new contract any time.
 
 📱 Open http://localhost:3000 to see the app
 
-# 💻 Using the DApp
+---
 
-1. After opening http://localhost:3000, click the "Log In" button select the first account (with address `0xf8d6e0586b0a20c7`). 
-2. Click "Get Greeting". You'll see a greeting appear. Note that this is the greeting defined in `HelloWorld.cdc` 
-3. You can change the greeting by typing into the little input and clicking "Change Greeting". This will run a transaction to change the greeting in the contract.
+# Checkpoint 1: 👛 Wallets
 
-# 📚 Documentation
+> 🔥 We'll be using **the local Flow dev wallet** on localhost...
 
-Documentation, tutorials, challenges, and many more resources, visit: [academy.ecdao.org](https://academy.ecdao.org)
-
-🚨 TODO: CHANGE EVERYTHING BELOW 🚨
-# 🍦 Other Flavors
-- [scaffold-eth-typescript](https://github.com/scaffold-eth/scaffold-eth-typescript)
-- [scaffold-nextjs](https://github.com/scaffold-eth/scaffold-eth/tree/scaffold-nextjs)
-- [scaffold-chakra](https://github.com/scaffold-eth/scaffold-eth/tree/chakra-ui)
-- [eth-hooks](https://github.com/scaffold-eth/eth-hooks)
-- [eth-components](https://github.com/scaffold-eth/eth-components)
-- [scaffold-eth-expo](https://github.com/scaffold-eth/scaffold-eth-expo)
-
-
-# 🔭 Learning Solidity
-
-📕 Read the docs: https://docs.soliditylang.org
-
-📚 Go through each topic from [solidity by example](https://solidity-by-example.org) editing `YourContract.sol` in **🏗 scaffold-eth**
-
-- [Primitive Data Types](https://solidity-by-example.org/primitives/)
-- [Mappings](https://solidity-by-example.org/mapping/)
-- [Structs](https://solidity-by-example.org/structs/)
-- [Modifiers](https://solidity-by-example.org/function-modifier/)
-- [Events](https://solidity-by-example.org/events/)
-- [Inheritance](https://solidity-by-example.org/inheritance/)
-- [Payable](https://solidity-by-example.org/payable/)
-- [Fallback](https://solidity-by-example.org/fallback/)
-
-📧 Learn the [Solidity globals and units](https://docs.soliditylang.org/en/latest/units-and-global-variables.html)
-
-# 🛠 Buidl
-
-Check out all the [active branches](https://github.com/scaffold-eth/scaffold-eth/branches/active), [open issues](https://github.com/scaffold-eth/scaffold-eth/issues), and join/fund the 🏰 [BuidlGuidl](https://BuidlGuidl.com)!
-
-  
- - 🚤  [Follow the full Ethereum Speed Run](https://medium.com/@austin_48503/%EF%B8%8Fethereum-dev-speed-run-bd72bcba6a4c)
-
-
- - 🎟  [Create your first NFT](https://github.com/scaffold-eth/scaffold-eth/tree/simple-nft-example)
- - 🥩  [Build a staking smart contract](https://github.com/scaffold-eth/scaffold-eth/tree/challenge-1-decentralized-staking)
- - 🏵  [Deploy a token and vendor](https://github.com/scaffold-eth/scaffold-eth/tree/challenge-2-token-vendor)
- - 🎫  [Extend the NFT example to make a "buyer mints" marketplace](https://github.com/scaffold-eth/scaffold-eth/tree/buyer-mints-nft)
- - 🎲  [Learn about commit/reveal](https://github.com/scaffold-eth/scaffold-eth-examples/tree/commit-reveal-with-frontend)
- - ✍️  [Learn how ecrecover works](https://github.com/scaffold-eth/scaffold-eth-examples/tree/signature-recover)
- - 👩‍👩‍👧‍👧  [Build a multi-sig that uses off-chain signatures](https://github.com/scaffold-eth/scaffold-eth/tree/meta-multi-sig)
- - ⏳  [Extend the multi-sig to stream ETH](https://github.com/scaffold-eth/scaffold-eth/tree/streaming-meta-multi-sig)
- - ⚖️  [Learn how a simple DEX works](https://medium.com/@austin_48503/%EF%B8%8F-minimum-viable-exchange-d84f30bd0c90)
- - 🦍  [Ape into learning!](https://github.com/scaffold-eth/scaffold-eth/tree/aave-ape)
-
-# 💌 P.S.
-
-🌍 You need an RPC key for testnets and production deployments, create an [Alchemy](https://www.alchemy.com/) account and replace the value of `ALCHEMY_KEY = xxx` in `packages/react-app/src/constants.js` with your new key.
-
-📣 Make sure you update the `InfuraID` before you go to production. Huge thanks to [Infura](https://infura.io/) for our special account that fields 7m req/day!
-
-# 🏃💨 Speedrun Ethereum
-Register as a builder [here](https://speedrunethereum.com) and start on some of the challenges and build a portfolio.
-
-# 💬 Support Chat
-
-Join the telegram [support chat 💬](https://t.me/joinchat/KByvmRe5wkR-8F_zz6AjpA) to ask questions and find others building with 🏗 scaffold-eth!
+> 👛 Click the "Log In" button and notice a window appears with different accounts to select, each with their own FlowToken balance. Select the first account to log in to it.
 
 ---
 
-🙏 Please check out our [Gitcoin grant](https://gitcoin.co/grants/2851/scaffold-eth) too!
+# Checkpoint 2: 📘 Reading the Greeting 
 
-### Automated with Gitpod
+> 👀 Click the `GET GREETING` button to see your greeting:
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#github.com/scaffold-eth/scaffold-eth)
+🚨🚨🚨 TODO: ADD IMAGE HERE 🚨🚨🚨
+
+---
+
+# Checkpoint 3: ✏️ Changing the Greeting 
+
+> ✏️ Change the greeting!  Click the `CHANGE GREETING` button:
+
+🚨🚨🚨 TODO: ADD IMAGE HERE 🚨🚨🚨
+
+👀 You should see your greeting change:
+
+🚨🚨🚨 TODO: ADD IMAGE HERE 🚨🚨🚨
+
+🔏 You can also check out your smart contract `HelloWorld.cdc` in `flow/cadence/HelloWorld.cdc`.
+
+💼 Take a quick look at how your contract get deployed in `flow.json`.
+
+📝 If you want to make frontend edits, open `index.js` in `pages/index.js`.
+
+---
+
+# Checkpoint 4: 💾 Deploy it!
+
+📔 Ready to deploy to a public testnet?!?
+
+> Change the `accessNode.api`, `discovery.wallet`, and `0xDeployer` configurations in `flow/config.js` to their testnet equivalents.
+
+🚨🚨🚨 TODO: ADD IMAGE HERE 🚨🚨🚨
+
+🔐 Generate a **deployer address** with `flow keys generate --network=testnet`
+
+🚨🚨🚨 TODO: ADD IMAGE HERE 🚨🚨🚨
+
+👛 Create your **deployer account** by going to https://testnet-faucet.onflow.org/, pasting in your public key from above, and clicking `CREATE ACCOUNT`: 
+
+🚨🚨🚨 TODO: ADD IMAGE HERE 🚨🚨🚨
+
+⛽️ Add your testnet account to `flow.json` as by modifying the following lines of code:
+
+```json
+"accounts": {
+  "emulator-account": {
+    "address": "f8d6e0586b0a20c7",
+    "key": "cdb3410ae829f5e2a29f71f53efbce66bde1187948d6317de6918d5003576ca7"
+  },
+  "testnet-account": {
+    "address": "YOUR GENERATED ADDRESS",
+    "key": {
+      "type": "hex",
+      "index": 0,
+      "signatureAlgorithm": "ECDSA_P256",
+      "hashAlgorithm": "SHA3_256",
+      "privateKey": "YOUR PRIVATE KEY"
+    }
+  }
+},
+"deployments": {
+  "emulator": {
+    "emulator-account": [
+      "HelloWorld"
+    ]
+  },
+  "testnet": {
+    "testnet-account": [
+      "HelloWorld"
+    ]
+  }
+}
+```
+
+🚀 Deploy your HelloWorld smart contract:
+
+```sh
+flow project deploy --network=testnet
+```
+
+---
+
+# ⚔️ Side Quests
+
+> 🏃 Head to your next challenge [here](https://github.com/emerald-dao/1-simple-nft).
+
+> 💬 Meet other builders working on this challenge and get help in the [💎 Emerald City Discord](https://discord.gg/emeraldcity)!
+
+> 👉 Problems, questions, comments on the stack? Post them to the [💎 Emerald City Discord](https://discord.gg/emeraldcity).
