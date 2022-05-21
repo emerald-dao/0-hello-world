@@ -55,7 +55,8 @@ export default function Home() {
       fcl.payer(fcl.authz),
       fcl.authorizations([fcl.authz]),
       fcl.limit(999)
-    ])
+    ], setNewGreeting(''))
+    
   }
 
   return (
@@ -72,7 +73,7 @@ export default function Home() {
             <h1 className='text-[#38E8C6]'>Address: </h1>
             <h1 className='border px-7 text-center text-[#38E8C6] text-sm py-1 rounded-xl border-[#38E8C6] w-56'>{user.loggedIn ? user.addr : "Please connect wallet -->"}</h1>
           </div>
-          <div>{!user ? <button className='border rounded-xl border-[#38E8C6] px-5 text-sm text-[#38E8C6] py-1' 
+          <div>{!user.loggedIn ? <button className='border rounded-xl border-[#38E8C6] px-5 text-sm text-[#38E8C6] py-1' 
             onClick={fcl.authenticate}>connect</button> : <button className='border rounded-xl border-[#38E8C6]
             px-5 text-sm text-[#38E8C6] py-1' onClick={fcl.unauthenticate}>Logout</button>}
           </div>
