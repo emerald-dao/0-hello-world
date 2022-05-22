@@ -86,7 +86,7 @@ flow dev-wallet
 
 ---
 
-# Checkpoint 4: 💾 Deploy it!
+# Checkpoint 4: 💾 Deploy it to testnet!
 
 📔 Ready to deploy to a public testnet?!?
 
@@ -102,13 +102,18 @@ flow dev-wallet
 
 🚨🚨🚨 TODO: ADD IMAGE HERE 🚨🚨🚨
 
+In your .env file, change the following:
+1. `NEXT_PUBLIC_ACCESS_NODE` to `https://testnet.onflow.org`
+2. `NEXT_PUBLIC_WALLET` to `https://fcl-discovery.onflow.org/testnet/authn` 
+3. `NEXT_PUBLIC_CONTRACT_ADDRESS` to your generated testnet address
+
 ⛽️ Add your testnet account to `flow.json` as by modifying the following lines of code:
 
 ```json
 "accounts": {
   "emulator-account": {
     "address": "f8d6e0586b0a20c7",
-    "key": "cdb3410ae829f5e2a29f71f53efbce66bde1187948d6317de6918d5003576ca7"
+    "key": "5112883de06b9576af62b9aafa7ead685fb7fb46c495039b1a83649d61bff97c"
   },
   "testnet-account": {
     "address": "YOUR GENERATED ADDRESS",
