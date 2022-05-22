@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import { useEffect, useState } from 'react';
 import styles from '../styles/Home.module.css'
 import * as fcl from "@onflow/fcl";
@@ -55,8 +54,7 @@ export default function Home() {
       fcl.payer(fcl.authz),
       fcl.authorizations([fcl.authz]),
       fcl.limit(999)
-    ], setNewGreeting(''))
-    
+    ]);
   }
 
   return (

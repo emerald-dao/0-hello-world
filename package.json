@@ -6,8 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "mint": "node ./actions/mint_nfts.js"
+    "lint": "next lint"
   },
   "dependencies": {
     "@onflow/fcl": "^0.0.78",

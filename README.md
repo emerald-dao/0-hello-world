@@ -38,18 +38,12 @@ cd 0-hello-world
 flow emulator start -v
 ```
 
-> in a third terminal window, 💸 start your local wallet:
-
-```bash
-cd 0-hello-world
-flow dev-wallet
-```
-
-> in a fourth terminal window, 💾 deploy your contract:
+> in a third terminal window, 💾 deploy your contract and 💸 start your local wallet:
 
 ```bash
 cd 0-hello-world
 flow project deploy
+flow dev-wallet
 ```
 
 > You can `flow project deploy --update` to deploy a new contract any time.
