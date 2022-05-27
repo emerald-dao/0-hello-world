@@ -7,7 +7,7 @@
 - The local Flow dev wallet to log into test accounts.
 - A template Next.js app with sample scripts and transactions to interact with your contract.
 
-🌟 The final deliverable is an app that lets users read and change a greeting field on Flow testnet.
+🌟 The final deliverable is a DApp that lets users read and change a greeting field on Flow testnet.
 
 💬 Meet other builders working on this challenge and get help in the [Emerald City Discord](https://discord.gg/emeraldcity)!
 
@@ -23,7 +23,7 @@ Required:
 git clone https://github.com/emerald-dao/0-hello-world.git
 ```
 
-> in a terminal window, start your 📱 frontend:
+> in a terminal window, 📱 install the dependencies start your frontend:
 
 ```sh
 cd 0-hello-world
@@ -150,7 +150,7 @@ You can now terminate all your terminals since we no longer need to run our own 
 
 ---
 
-# Make Edits!
+# 📝 Make Edits!
 
 🔏 You can also check out your smart contract `HelloWorld.cdc` in `flow/cadence/HelloWorld.cdc`.
 
