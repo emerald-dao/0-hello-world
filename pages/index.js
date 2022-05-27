@@ -72,7 +72,7 @@ export default function Home() {
             <h1 className='border px-7 text-center text-[#38E8C6] text-sm py-1 rounded-xl border-[#38E8C6] w-56'>{user.loggedIn ? user.addr : "Please connect wallet -->"}</h1>
           </div>
           <div>{!user.loggedIn ? <button className='border rounded-xl border-[#38E8C6] px-5 text-sm text-[#38E8C6] py-1' 
-            onClick={fcl.authenticate}>connect</button> : <button className='border rounded-xl border-[#38E8C6]
+            onClick={fcl.authenticate}>Log In</button> : <button className='border rounded-xl border-[#38E8C6]
             px-5 text-sm text-[#38E8C6] py-1' onClick={fcl.unauthenticate}>Logout</button>}
           </div>
         </div>
@@ -81,7 +81,7 @@ export default function Home() {
               <button onClick={getGreeting} className="border rounded-lg py-2 text-sm px-5 border-[#38E8C6] text-blue-900 font-bold bg-[#38E8C6]">Get Greeting</button>
               <div className='h-28 bg-[#00344B] border flex items-center justify-center text-white border-[#38E8C6] rounded-lg'>{greeting}</div>
               <div className='flex flex-col space-y-3'>
-                <input type="text" placeholder='Say hello' className='px-4 py-1 focus:outline-none focus:border-[#38E8C6] focus:border-2 bg-green-100 border rounded-lg border-[#38E8C6]' onChange={e => setNewGreeting(e.target.value)} />
+                <input type="text" placeholder='Goodbye, World!' className='px-4 py-1 focus:outline-none focus:border-[#38E8C6] focus:border-2 bg-green-100 border rounded-lg border-[#38E8C6]' onChange={e => setNewGreeting(e.target.value)} />
                 <button className='rounded-lg text-center text-sm font-bold text-blue-900 py-2 bg-[#38E8C6]' onClick={changeGreeting}>Change Greeting</button>
               </div>
           </div>

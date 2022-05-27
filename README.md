@@ -38,6 +38,8 @@ cd 0-hello-world
 flow emulator start -v
 ```
 
+*Note: the `-v` flag means to print transaction and script output to your local emulator*
+
 > in a third terminal window, 💾 deploy your contract and 💸 start your local wallet:
 
 ```bash
@@ -54,35 +56,29 @@ flow dev-wallet
 
 # Checkpoint 1: 👛 Wallets
 
-> 🔥 We'll be using **the local Flow dev wallet** on localhost...
+> 🔥 We'll be using **the local Flow dev wallet**.
 
-> 👛 Click the "Log In" button and notice a window appears with different accounts to select, each with their own FlowToken balance. Select the first account to log in to it.
+> 👛 Click the "Log In" button and notice a window appears with different accounts to select, each with their own Flow Token balance. Select the first account to log in to it.
 
 ---
 
 # Checkpoint 2: 📘 Reading the Greeting 
 
-> 👀 Click the `GET GREETING` button to see your greeting:
+> 👀 Click the `Get Greeting` button to see your greeting:
 
-🚨🚨🚨 TODO: ADD IMAGE HERE 🚨🚨🚨
+<img src="https://i.imgur.com/PsK32ap.png" alt="get greeting" />
 
 ---
 
 # Checkpoint 3: ✏️ Changing the Greeting 
 
-> ✏️ Change the greeting!  Click the `CHANGE GREETING` button:
+> ✏️ Change the greeting! Type a new greeting into the input and click the `Change Greeting` button. You should see a transaction pop up:
 
-🚨🚨🚨 TODO: ADD IMAGE HERE 🚨🚨🚨
+<img src="https://i.imgur.com/XByQNZ3.png" alt="transaction popup" />
 
-👀 You should see your greeting change:
+> 👀 Click "APPROVE" and then click the `Get Greeting` button again. You should now see your new greeting:
 
-🚨🚨🚨 TODO: ADD IMAGE HERE 🚨🚨🚨
-
-🔏 You can also check out your smart contract `HelloWorld.cdc` in `flow/cadence/HelloWorld.cdc`.
-
-💼 Take a quick look at how your contract get deployed in `flow.json`.
-
-📝 If you want to make frontend edits, open `index.js` in `pages/index.js`.
+<img src="https://i.imgur.com/cOW1PXB.png" alt="new greeting" />
 
 ---
 
@@ -90,24 +86,17 @@ flow dev-wallet
 
 📔 Ready to deploy to a public testnet?!?
 
-> Change the `accessNode.api`, `discovery.wallet`, and `0xDeployer` configurations in `flow/config.js` to their testnet equivalents.
+> 🔐 Generate a **deployer address** by typing `flow keys generate --network=testnet` into a terminal. Make sure to save your public key and private key somewhere, you will need them soon.
 
-🚨🚨🚨 TODO: ADD IMAGE HERE 🚨🚨🚨
+<img src="https://i.imgur.com/HbF4C73.png" alt="generate key pair" />
 
-🔐 Generate a **deployer address** with `flow keys generate --network=testnet`
+> 👛 Create your **deployer account** by going to https://testnet-faucet.onflow.org/, pasting in your public key from above, and clicking `CREATE ACCOUNT`: 
 
-🚨🚨🚨 TODO: ADD IMAGE HERE 🚨🚨🚨
+<img src="https://i.imgur.com/73OjT3K.png" alt="configure testnet account on the website" />
 
-👛 Create your **deployer account** by going to https://testnet-faucet.onflow.org/, pasting in your public key from above, and clicking `CREATE ACCOUNT`: 
+> After it finishes, click `COPY ADDRESS` and make sure to save that address somewhere. You will need it!
 
-🚨🚨🚨 TODO: ADD IMAGE HERE 🚨🚨🚨
-
-In your .env file, change the following:
-1. `NEXT_PUBLIC_ACCESS_NODE` to `https://testnet.onflow.org`
-2. `NEXT_PUBLIC_WALLET` to `https://fcl-discovery.onflow.org/testnet/authn` 
-3. `NEXT_PUBLIC_CONTRACT_ADDRESS` to your generated testnet address
-
-⛽️ Add your testnet account to `flow.json` as by modifying the following lines of code:
+> ⛽️ Add your new testnet account to your `flow.json` by modifying the following lines of code. Paste your address you copied above to where it says "YOUR GENERATED ADDRESS", and paste your private key where it says "YOUR PRIVATE KEY".
 
 ```json
 "accounts": {
@@ -140,13 +129,34 @@ In your .env file, change the following:
 }
 ```
 
-🚀 Deploy your HelloWorld smart contract:
+> 🚀 Deploy your HelloWorld smart contract:
 
 ```sh
 flow project deploy --network=testnet
 ```
 
+<img src="https://i.imgur.com/GBFs2Uz.png" alt="deploy contract to testnet" />
+
+> Lastly, configure your .env file to point to Flow TestNet so we can interact with your new contract.
+
+In your .env file, change the following:
+1. `NEXT_PUBLIC_CONTRACT_ADDRESS` to your generated testnet address
+2. `NEXT_PUBLIC_ACCESS_NODE` to `https://testnet.onflow.org`
+3. `NEXT_PUBLIC_WALLET` to `https://fcl-discovery.onflow.org/testnet/authn` 
+
+You can now terminate all your terminals since we no longer need to run our own local blockchain or wallet. Everything lives on testnet!
+
+> Run `npm run dev` to start your application in a terminal, and have a blast with your DApp!
+
 ---
+
+# Make Edits!
+
+🔏 You can also check out your smart contract `HelloWorld.cdc` in `flow/cadence/HelloWorld.cdc`.
+
+💼 Take a quick look at how your contract get deployed in `flow.json`.
+
+📝 If you want to make frontend edits, open `index.js` in `pages/index.js`.
 
 # ⚔️ Side Quests
 
