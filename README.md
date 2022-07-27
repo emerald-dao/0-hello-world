@@ -1,6 +1,6 @@
 # 💎 Emerald Academy
 
-## 🚩 Challenge 0: 🍀 Hello World Example 🤓
+## 🚩 Challenge 0: Hello World Example 
 
 🎫 Deploy a simple HelloWorld contract to learn the basics of the Flow blockchain and Cadence. You'll use:
 - The local Flow emulator to deploy smart contracts. 
@@ -13,7 +13,7 @@
 
 ---
 
-# Checkpoint 0: 📦 Install 📚
+# 📦 Checkpoint 0: Install
 
 Required: 
 * [Git](https://git-scm.com/downloads)
@@ -55,7 +55,7 @@ flow dev-wallet
 
 ---
 
-# Checkpoint 1: 👛 Wallets
+# 👛 Checkpoint 1: Wallets
 
 > 🔥 We'll be using **the local Flow dev wallet**.
 
@@ -63,7 +63,7 @@ flow dev-wallet
 
 ---
 
-# Checkpoint 2: 📘 Reading the Greeting 
+# 📘 Checkpoint 2: Reading the Greeting 
 
 > 👀 Click the `Get Greeting` button to see your greeting:
 
@@ -71,7 +71,7 @@ flow dev-wallet
 
 ---
 
-# Checkpoint 3: ✏️ Changing the Greeting 
+# ✏️ Checkpoint 3: Changing the Greeting 
 
 > ✏️ Change the greeting! Type a new greeting into the input and click the `Change Greeting` button. You should see a transaction pop up:
 
@@ -83,7 +83,7 @@ flow dev-wallet
 
 ---
 
-# Checkpoint 4: 💾 Deploy it to testnet!
+# 💾 Checkpoint 4: Deploy it to testnet!
 
 📔 Ready to deploy to a public testnet?!?
 
