@@ -161,7 +161,7 @@ You can now terminate all your terminals since we no longer need to run our own 
 
 # ⚔️ Side Quests
 
-> 🏃 Head to your next challenge [here](https://github.com/emerald-dao/1-simple-nft).
+> 🏃 Head to your next challenge [here](https://academy.ecdao.org/challenges/non-fungible-token).
 
 > 💬 Meet other builders working on this challenge and get help in the [💎 Emerald City Discord](https://discord.gg/emeraldcity)!
 
