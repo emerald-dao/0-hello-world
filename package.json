@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "@onflow/fcl": "1.1.0",
-    "@onflow/types": "^0.0.6",
     "dotenv": "^16.0.1",
     "elliptic": "^6.5.4",
     "next": "12.1.6",
