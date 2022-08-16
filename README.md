@@ -97,7 +97,7 @@ We'll be using **the local Flow dev wallet**.
 
 > 👛 Create your **deployer account** by going to https://testnet-faucet.onflow.org/, pasting in your public key from above, and clicking `CREATE ACCOUNT`: 
 
-<img src="https://i.imgur.com/73OjT3K.png" alt="configure testnet account on the website" />
+<img src="https://i.imgur.com/73OjT3K.png" alt="configure testnet account on the website" width="400" />
 
 > After it finishes, click `COPY ADDRESS` and make sure to save that address somewhere. You will need it!
 
