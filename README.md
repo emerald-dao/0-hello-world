@@ -17,6 +17,8 @@
 
 Want a video walkthrough? Check out Jacob Tucker's walkthrough here: [![Challenge #0 (Hello World) Walkthrough](https://i.imgur.com/mlDKsL6.jpg)](https://www.youtube.com/watch?v=4HiXSGES8_o "Emerald Academy - Challenge #0 (Hello World) Walkthrough")
 
+---
+
 # 📦 Checkpoint 0: Install
 
 Required: 
