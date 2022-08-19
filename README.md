@@ -1,6 +1,6 @@
 # 💎 Emerald Academy
 
-## 🚩 Challenge 0: Hello World Example 
+## 🚩 Challenge 0: Hello World
 
 🎫 Deploy a simple HelloWorld contract to learn the basics of the Flow blockchain and Cadence. You'll use:
 - The local Flow emulator to deploy smart contracts. 
@@ -10,6 +10,12 @@
 🌟 The final deliverable is a DApp that lets users read and change a greeting field on Flow testnet.
 
 💬 Meet other builders working on this challenge and get help in the [Emerald City Discord](https://discord.gg/emeraldcity)!
+
+---
+
+# Video Walkthrough
+
+Want a video walkthrough? Check out Jacob Tucker's walkthrough here: [![Challenge #0 (Hello World) Walkthrough](https://i.imgur.com/mlDKsL6.jpg)](https://www.youtube.com/watch?v=4HiXSGES8_o "Emerald Academy - Challenge #0 (Hello World) Walkthrough")
 
 ---
 
@@ -57,9 +63,9 @@ flow dev-wallet
 
 # 👛 Checkpoint 1: Wallets
 
-> 🔥 We'll be using **the local Flow dev wallet**.
+We'll be using **the local Flow dev wallet**.
 
-> 👛 Click the "Log In" button and notice a window appears with different accounts to select, each with their own Flow Token balance. Select the first account to log in to it.
+> Click the "Log In" button and notice a window appears with different accounts to select, each with their own Flow Token balance. Select the first account to log in to it.
 
 ---
 
@@ -93,7 +99,7 @@ flow dev-wallet
 
 > 👛 Create your **deployer account** by going to https://testnet-faucet.onflow.org/, pasting in your public key from above, and clicking `CREATE ACCOUNT`: 
 
-<img src="https://i.imgur.com/73OjT3K.png" alt="configure testnet account on the website" />
+<img src="https://i.imgur.com/73OjT3K.png" alt="configure testnet account on the website" width="400" />
 
 > After it finishes, click `COPY ADDRESS` and make sure to save that address somewhere. You will need it!
 
