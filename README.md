@@ -13,13 +13,13 @@
 
 # 🚶 Walkthrough
 
-View a whole walkthrough of this quest [here](https://emerald-academy-v2.vercel.app/en/quickstarts/0-hello-world).
+View a whole walkthrough of this quest [here](https://academy.ecdao.org/en/quickstarts/0-hello-world).
 
 ---
 
 # ⚔️ Side Quests
 
-> 🏃 Head to your next challenge [here](https://emerald-academy-v2.vercel.app/en/quickstarts/1-fungible-token).
+> 🏃 Head to your next challenge [here](https://academy.ecdao.org/en/quickstarts/1-non-fungible-token).
 
 > 💬 Meet other builders working on this challenge and get help in the [💎 Emerald City Discord](https://discord.gg/emeraldcity)!
 
